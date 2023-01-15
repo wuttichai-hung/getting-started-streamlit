@@ -1,8 +1,12 @@
 import streamlit as st
 import pandas as pd
 
+st.markdown("# Source Code")
 with st.echo():
-    st.title("Getting Stated Streamlit")
+    import streamlit as st
+    import pandas as pd
+
+    st.title("Getting Started Streamlit")
     st.write("This is introduction to streamlit")
 
     st.markdown("## Code")
@@ -19,7 +23,7 @@ with st.echo():
     cols = st.columns(2)
     with cols[0]:
         age_inp = st.number_input("Input your age")
-        st.markdown(f"Your age is {age_inp}")
+        st.markdown(f"Your age is {round(age_inp, 2)}")
 
 
     # st.markdown("# NLP Task")
